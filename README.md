@@ -50,8 +50,11 @@ At this point if you go to `http://yourhost:81/` you should get a 401 error with
 
 Example creates a keytab file `kerberos.keytab` for user principal `kerberos@YOURDOMAIN.COM`
 
-`ktpass -out kerberos.keytab -princ kerberos@YOURDOMAIN.COM -mapUser kerberos -mapOp set -pass YOUR_PASSWORD -crypto ALL -pType KRB5_NT_PRINCIPAL`
-Creating the KeyTab on Ubuntu Linux
+```
+ktpass -out kerberos.keytab -princ kerberos@YOURDOMAIN.COM -mapUser kerberos -mapOp set -pass YOUR_PASSWORD -crypto ALL -pType KRB5_NT_PRINCIPAL
+```
+
+## Creating the KeyTab on Ubuntu Linux
 
 Requires krb5-user package installed. I.e. `sudo apt-get install krb5-user`
 
