@@ -15,10 +15,10 @@ import java.util.concurrent.Future;
 import java.util.concurrent.LinkedBlockingDeque;
 import java.util.concurrent.TimeUnit;
 
-public class AsyncHttpSpnego {
+public class HttpSpnegoExample {
     public static void main(String[] args) throws Exception {
         if (args.length != 1) {
-            System.out.println("Usage: AsyncHttpSpnego takes one argument [hostname] of the web server protected by kerberos.");
+            System.out.println("Usage: HttpSpnegoExample takes one argument [hostname] of the web server protected by kerberos.");
             System.exit(0);
         }
         String host = args[0];

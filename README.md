@@ -152,5 +152,5 @@ You can run the sample.
 
 ```
 ./gradlew clean build
-java -cp build/libs/httpclient-tester-1.0.jar AsyncHttpSpnego YOURHOST
+java -cp build/libs/httpclient-tester-1.0.jar HttpSpnegoExample YOURHOST
 ```
