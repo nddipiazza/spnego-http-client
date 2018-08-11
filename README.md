@@ -71,11 +71,7 @@ Example creates a keytab file `kerberos.keytab` for user principal `kerberos@YOU
 ```
 ktutil
 addent -password -p kerberos@YOURDOMAIN.COM -k 1 -e RC4-HMAC
-```
-
-... It will ask you for password of kerberos...
-
-```
+# ... It will ask you for password of kerberos...
 wkt kerberos.keytab
 q
 ```
