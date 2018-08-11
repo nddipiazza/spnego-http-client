@@ -46,6 +46,14 @@ But specifically here's what you do:
 
 At this point if you go to `http://yourhost:81/` you should get a 401 error without a valid Negotiate authorization header.
 
+## Create the Kerberos configuration files
+
+In order to do kerberos logins, we need the following files:
+
+* A keytab file that represents the user we created in Active Directory earlier.
+* A login.conf (The format is the login.conf is described here: https://docs.oracle.com/javase/8/docs/technotes/guides/security/jgss/tutorials/LoginConfigFile.html )
+* A krb5.ini file: (The format of the krb5.ini file is described here: https://web.mit.edu/kerberos/krb5-1.12/doc/admin/conf_files/krb5_conf.html )
+
 ## Create the keytab on Windows
 
 Example creates a keytab file `kerberos.keytab` for user principal `kerberos@YOURDOMAIN.COM`
@@ -136,9 +144,6 @@ YOURDOMAIN.COM = {
 .YOURDOMAIN.COM = YOURDOMAIN.COM
 YOURDOMAIN.COM = YOURDOMAIN.COM
 ```
-
-The format is the login.conf is described here: https://docs.oracle.com/javase/8/docs/technotes/guides/security/jgss/tutorials/LoginConfigFile.html
-The format of the krb5.ini file is described here: https://web.mit.edu/kerberos/krb5-1.12/doc/admin/conf_files/krb5_conf.html
 
 # Run the example
 
