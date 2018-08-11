@@ -24,7 +24,7 @@ https://blogs.msdn.microsoft.com/chiranth/2014/04/17/setting-up-kerberos-authent
 
 But specifically here's what you do: 
 
-* On the AD Server, create a new user to be the kerberos subject user
+* On the Active Directory Server, create a new user to be the kerberos subject user
   * The new user in my case is:
     
     ```
