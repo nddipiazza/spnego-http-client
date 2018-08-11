@@ -9,11 +9,9 @@ But using the AuthScheme.SPNEGO has two issues:
 
 I logged these issues in a jira: https://issues.apache.org/jira/browse/HTTPCLIENT-1912
 
-This example will use Negotiate authorization and will download sample 984 files from the IIS server with multiple threads.
+So this example fixes the problem by performing the GSS login process ourselves. We will obtain the authorization token and add it to the HttpGet request as a header.
 
-# Solution
-
-Perform the GSS login process ourselves to obtain authorization token to add to the headers ourselves.
+This example will show that we can use Negotiate authorization with a custom login context entry name and will download sample 984 files from the IIS server with multiple threads.
 
 # How to setup this example using Windows IIS
 
